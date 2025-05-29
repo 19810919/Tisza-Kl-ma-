@@ -1,0 +1,50 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #00ff99;
+}
+
+nav button {
+    margin: 0.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #00cc88;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+section.active {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TISZA KLÍMA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TISZA KLÍMA</h1>
+        <nav>
+            <button onclick="showSection('rolunk')">Rólunk</button>
+            <button onclick="showSection('deepclean')">Deep Clean</button>
+            <button onclick="showSection('tajekoztato')">Tájékoztató</button>
+            <button onclick="showSection('velemenyek')">Vélemények</button>
+            <button onclick="showSection('kapcsolat')">Kapcsolat</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="rolunk" class="active">
+            <h2>Rólunk</h2>
+            <p>Mi a TISZA KLÍMÁ-nál szenvedéllyel és precizitással dolgozunk, hogy minden klímaberendezés a lehető legjobb állapotban szolgálja ügyfeleink kényelmét. Maximális odafigyeléssel az ügyfeleink igényeire, minden munkát úgy végzünk el, mintha a saját otthonunkban dolgoznánk.</p>
+        </section>
+
+        <section id="deepclean">
+            <h2>Deep Clean Technológia</h2>
+            <p>Professzionális mélytisztításos eljárásunkkal teljesen eltávolítjuk a szennyeződéseket, baktériumokat, penészt és polleneket a beltéri egység minden rejtett zugából. Ez nem csak a levegő minőségét javítja, hanem az energiahatékonyságot is növeli, és meghosszabbítja a készülék élettartamát.</p>
+        </section>
+
+        <section id="tajekoztato">
+            <h2>Tájékoztató</h2>
+            <p>A klímaberendezéseket évente legalább egyszer – a nyári szezon előtt – érdemes professzionálisan kitisztíttatni. A rendszeres karbantartás megelőzi a meghibásodásokat, csökkenti a villanyszámlát, és biztosítja az egészséges, friss levegőt otthonában vagy munkahelyén.</p>
+        </section>
+
+        <section id="velemenyek">
+            <h2>Vélemények</h2>
+            <p>"Gyors, precíz, kedves szakember. Ajánlom!"<br>
+            "Végre tiszta levegő a lakásban! Köszönöm!"</p>
+        </section>
+
+        <section id="kapcsolat">
+            <h2>Kapcsolat</h2>
+            <p>Telefon: +36 70 312 7931<br>
+            E-mail: tiszagabor.kivitelezes@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TISZA KLÍMA</p>
+    </footer>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+</html>
